@@ -1,0 +1,8 @@
+1、[name^= "val"]
+2、p:first-letter
+3、li:nth-child(2)
+4、div~p
+5、[id$="val"]
+6、
+7、
+8、
