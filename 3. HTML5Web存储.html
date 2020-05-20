@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网页换肤</title>
+	<style>
+        fieldset {
+            width: 600px;
+            margin: 30px auto;
+        }
+        
+        legend {
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #div{
+        	width: 450px;
+        	text-align: center;
+        	margin-left: 70px;
+        }
+        ul{
+        	width: 500;
+        	list-style: none;
+        	border: 1px solid;
+        }
+        ul li{
+        	display: inline-block;
+        	width: 15px;
+        	height: 15px;
+          position: relative;
+        }
+    </style>
+</head>
+<body>
+	<fieldset>
+		<legend>网页换肤</legend>
+		<ul>
+			<li title="yellow"></li>
+			<li title="red"></li>
+			<li title="green"></li>
+			<li title="blue"></li>
+			<li title="orange"></li>
+			<li title="purple"></li>
+		</ul>
+		<div id="div">
+			LocalStorage将数据保存在客户端本地的硬件设备中,即使浏览器被关闭了，该数据仍然存在，下次打开浏览器访问网站时仍可以继续使用。
+		</div>
+	</fieldset>
+
+</body>
+<script type="text/javascript">
+	var color = ["yellow","red","green","blue","orange","purple"];
+	var arr = document.getElementsByTagName('li');
+  var tag = 0;
+	for(var i = 0;i < arr.length;i++){
+  		arr[i].style.background = color[i];
+  		arr[i].index = i;
+      arr[i].onclick=function(){
+   			document.getElementById('div').style.background = color[this.index];
+    		localStorage.setItem('bgc',color[this.index]);
+
+        var top = arr[this.index].style.top;
+        arr[this.index].style.top = top - 5 + "px";       
+        var top1 = parseInt(arr[tag].style.top);
+        arr[tag].style.top = top1 + 5 + "px";
+        tag = this.index;
+  		}
+
+  		window.onload=function(){
+        if (!localStorage.getItem('bgc')) {
+          document.getElementById('div').style.background = color[0];
+          localStorage.setItem('bgc',color[0]);
+          var top = arr[0].style.top;
+          arr[0].style.top = top - 5 + "px";
+        }else{
+          document.getElementById('div').style.background = localStorage.getItem('bgc');
+        }
+    		
+  		}
+	}
+
+</script>
+</html>
