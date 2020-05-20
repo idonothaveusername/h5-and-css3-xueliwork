@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>学生信息</h1>
+	<fieldset>
+		<legend>学生档案</legend> 
+		<form action="#" method="get">
+			姓名:<br/>
+			<input type="text" name="name" placeholder="请输入姓名" required autofocus="autofocus">
+			<span>*</span>
+			<br/>
+			学号:<br/>
+			<input type="number" name="num" placeholder="请输入学号" required>
+			<span>*</span>
+			<br/>
+			手机号码:<br/>
+			<input type="tel" placeholder = "请输入手机号" name="phone"  required>
+			<span>*</span>
+			<br/>
+			邮箱地址:<br/>
+			<input type="email" placeholder = "请输入邮箱地址" name="email" required>
+			<span>*</span>
+			<br/>
+			录取学校:<br/>
+			<input type="search" name="school" list="school">
+			<datalist id="school">
+				<option value="河北师范大学"></option>
+				<option value="河北科技大学"></option>
+				<option value="河北地质大学"></option>
+			</datalist>
+			<br/>
+			入学成绩:<br/>
+			<input type="number" name="grade">
+			<br/>
+			入学时间:<br/>
+			<input type="date" name="datedemo">
+			<br/>
+			<br/>
+			<input type="submit">
+			
+		</form>
+	</fieldset>
+</body>
+<script type="text/javascript">
+	var fieldset = document.getElementsByTagName('fieldset')[0];
+	fieldset.style.width = "300px";
+
+	var tag = document.getElementsByTagName('span');
+	for (var i = 0; i < tag.length; i++)
+	 {
+		tag[i].style.color = "red";
+	}
+
+	var legend = document.getElementsByTagName('legend')[0];
+	legend.style.color = "red";
+	legend.style.fontSize = "20px";
+
+	var input = document.getElementsByTagName('input');
+	for (var i = 0; i < input.length; i++)
+	 {
+		input[i].style.width = "250px";
+	}
+	
+</script>
+</html>
