@@ -1,0 +1,471 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .header-wrapper {
+        height: 45px;
+        background-color: black;
+        color: #fff;
+    }
+    
+    .header {
+        width: 1200px;
+        height: 45px;
+        margin: 0px auto;
+    }
+    
+    .header-left {
+        width: 200px;
+        float: right;
+        margin-right: 150px;
+        line-height: 45px;
+    }
+    
+    .header-right {
+        width: 100px;
+        float: right;
+        margin-right: -250px;
+        line-height: 45px;
+    }
+    
+    .nav-wrapper {
+        height: 78px;
+    }
+    
+    .nav {
+        width: 1200px;
+        height: 78px;
+        margin: 0px auto;
+    }
+    
+    .nav-left {
+        float: left;
+        line-height: 76px;
+    }
+    
+    .nav-right {
+        width: 700px;
+        float: right;
+        line-height: 76px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .nav-right1>li {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .nav-right1>li:first-child {
+        margin-left: -200px;
+    }
+    
+    .nav-right1>li:hover {
+        border-bottom: 2px solid rgb(232, 66, 10);
+    }
+    
+    .nav-right1>li>a {
+        color: #000;
+    }
+    
+    .nav-right1>li:hover>a {
+        color: rgb(232, 66, 10);
+    }
+    
+    .banner-wrapper {
+        margin-top: 5px;
+        height: 447px;
+        background-image: url("img/banner.jpg");
+    }
+    
+    .banner {
+        width: 1200px;
+        margin: 0px auto;
+    }
+    
+    .font {
+        width: 500px;
+        height: 200px;
+        float: left;
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+    
+    .top-font {
+        height: 30px;
+        line-height: 30px;
+        font-size: 35px;
+        font-family: 宋体;
+        color: #fff;
+    }
+    
+    .next-font {
+        margin-top: 25px;
+        height: 70px;
+        line-height: 35px;
+        font-size: 18px;
+        font-family: 微软雅黑;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    
+    .search {
+        float: left;
+        margin-top: 300px;
+        margin-left: -300px;
+        width: 502px;
+        height: 40px;
+        border: 1px solid #000;
+    }
+    
+    .search1 {
+        width: 100px;
+        line-height: 40px;
+        text-align: center;
+        background-color: rgb(216, 212, 212);
+    }
+    
+    .search2 {
+        margin-top: -40px;
+        margin-left: 100px;
+        width: 280px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #fff;
+        color: rgb(216, 212, 212);
+    }
+    
+    .search3 {
+        margin-top: -40px;
+        margin-left: 380px;
+        width: 120px;
+        line-height: 40px;
+        text-align: center;
+        background-color: rgb(238, 155, 30);
+    }
+    
+    .send {
+        height: 367px;
+        margin-top: 30px;
+    }
+    
+    .send-left {
+        height: 367px;
+        background-image: url(img/Sbanner2.jpg);
+    }
+    
+    .send-font {
+        width: 400px;
+        height: 200px;
+        margin-top: 20px;
+        float: right;
+        color: #fff;
+    }
+    
+    .send-font1 {
+        font-size: 35px;
+        font-family: 宋体;
+    }
+    
+    .send-font2 {
+        font-size: 18px;
+        font-family: 宋体;
+        line-height: 30px;
+    }
+    
+    .send-right {
+        height: 367px;
+        background-color: rgb(113, 46, 177);
+        color: #fff;
+    }
+    
+    .send-right1 {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    
+    .send-right2 {
+        width: 150px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 75px;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #fff;
+        border-radius: 10%;
+    }
+    
+    .route-wrapper {
+        height: 1150px;
+        margin-top: 10px;
+    }
+    
+    .route {
+        width: 1200px;
+        margin: 0px auto;
+    }
+    
+    .route-font {
+        height: 85px;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    .route-font1 {
+        font-size: 30px;
+    }
+    
+    .route-font2 {
+        font-size: 20px;
+    }
+    
+    .route-pic {
+        height: 1100px;
+        margin-top: 5px;
+    }
+    
+    .route-picl {
+        width: 588px;
+        float: left;
+    }
+    
+    .route-picr {
+        width: 608px;
+        float: right;
+    }
+    
+    .route-picl1 {
+        height: 385px;
+        background-image: url("img/hot1.jpg");
+    }
+    
+    .route-picfont1 {
+        height: 122px;
+        background-color: black;
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    .route-picl2 {
+        height: 385px;
+        margin-top: 6px;
+        background-image: url("img/hot2.jpg");
+    }
+    
+    .route-picr1 {
+        height: 292px;
+        background-image: url("img/hot3.jpg");
+    }
+    
+    .route-picr2 {
+        height: 357px;
+        margin-top: 3px;
+        background-image: url("img/hot4.jpg");
+    }
+    
+    .route-picr3 {
+        height: 365px;
+        margin-top: 4px;
+        background-image: url("img/hot5.jpg");
+    }
+    
+    .route-picfont2 {
+        margin-top: -60px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.35);
+        color: #fff;
+        line-height: 25px;
+    }
+    
+    .hope-font {
+        height: 100px;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .hope-font1 {
+        font-size: 22px;
+    }
+    
+    .hope1 {
+        height: 350px;
+        margin-left: 4px;
+    }
+    
+    .hope1-left {
+        height: 350px;
+        background-image: url("img/mission1.jpg");
+    }
+    
+    .hope1-right {
+        height: 350px;
+        background-color: rgb(13, 13, 124);
+        color: #fff;
+        text-align: center;
+    }
+    
+    .hope1-right1 {
+        height: 28px;
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    
+    .hope1-right2 {
+        height: 30px;
+        width: 450px;
+        margin-top: 20px;
+        margin-left: 100px;
+        line-height: 30px;
+    }
+    
+    .hope2 {
+        margin-top: 4px;
+        height: 472px;
+    }
+    
+    .hope3 {
+        height: 400px;
+        width: 1200px;
+        margin-top: 5px;
+        background-color: rgb(49, 49, 211);
+        color: #fff;
+    }
+    
+    .hope3-ba {
+        width: 200px;
+        height: 200px;
+        margin-left: 100px;
+    }
+    
+    .hope3-1 {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 180px;
+    }
+    
+    .hope3-2 {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    
+    .hope3-3 {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    
+    .hope3-font {
+        width: 300px;
+        height: 50px;
+        margin-top: -50px;
+        text-align: center;
+        line-height: 35px;
+    }
+    
+    .list-wrapper {
+        background-color: #000;
+        height: 370px;
+        margin-top: 1px;
+    }
+    
+    .list {
+        width: 1200px;
+        margin: 0px auto;
+        color: #fff;
+    }
+    
+    .list1 {
+        height: 80px;
+    }
+    
+    .list2 {
+        height: 90px;
+    }
+    
+    .list3 {
+        height: 90px;
+    }
+    
+    .list4 {
+        height: 90px;
+    }
+    
+    .list1-left {
+        width: 150px;
+        float: left;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .list1-right {
+        width: 850px;
+    }
+    
+    .list11 {
+        width: 115px;
+        margin-left: 20px;
+        float: left;
+        margin-top: 20px;
+    }
+    
+    .list2-left {
+        width: 150px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    .list2-right {
+        width: 1050px;
+        float: left;
+        margin-left: 150px;
+        margin-top: -28px;
+        line-height: 20px;
+    }
+    
+    .list3-left {
+        width: 150px;
+        float: left;
+        font-size: 20px;
+    }
+    
+    .list4-left {
+        width: 150px;
+        float: left;
+        font-size: 20px;
+    }
+    
+    .end-wrapper {
+        background-color: #000;
+        height: 160px;
+        border-top: 1px solid #fff;
+    }
+    
+    .end {
+        width: 1200px;
+        margin: 0px auto;
+        color: #fff;
+        text-align: center;
+        line-height: 160px;
+    }
+    /*媒体查询*/
