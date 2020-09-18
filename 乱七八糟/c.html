@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	// const data = [
+	//    {id:1,name:"男装",hot:true},
+	//    {id:2,name:"女装",hot:false},
+	//    {id:3,name:"鞋包",hot:true},
+	//    {id:4,name:"饮料",hot:false}
+	// ]
+
+	// var result = data.map(function(item) {
+	// 	var newArr = {
+	// 		id:item.id,
+	// 		name:item.name,
+	// 		hot:item.hot?"最新":"不新"
+	// 	}
+	// 	return newArr
+	// })
+	// console.log(result);
+
+
+	// console.log(data.map(function(a) {
+	// 	var arr = {
+	// 		id:a.id,
+	// 		name:a.name,
+	// 		hot:a.hot?"最新":"不新"
+	// 	}
+	// 	return arr
+	// }));
+
+	
+	const flatten = (arr) => {
+		var newArr = [];
+	    if (!Array.isArray(arr)) {
+	        newArr.push(arr);
+	    } else {
+	        for (let i = 0; i < arr.length; i++) {
+	             newArr = newArr.concat(flatten(arr[i]));
+	        }
+		}
+    	return newArr;
+	}
+	console.log(flatten([1, [[2], 3, 4], 5]));//[1, 2, 3, 4, 5]
+</script>
+</html>

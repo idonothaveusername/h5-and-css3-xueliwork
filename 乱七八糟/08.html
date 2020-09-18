@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        class Cash {
+            constructor(sum) {
+                this.sum = sum;
+            }
+            static add(...cash) {
+                let i = 0;
+                return new Cash(cash.reduce((a, b) => a + b, i));
+            }
+            add(...cash) {
+                return Cash.add(this, ...cash);
+            }
+            static format(sum) {
+                let yuan = parseInt(sum / 100),
+                    jiao = parseInt((sum / 10) % 10),
+                    fen = sum % 10;
+                return `${yuan}元${jiao}角${fen}分`;
+            }
+            toString() {
+                return Cash.format(this.sum);
+            }
+            valueOf() {
+                return this.sum;
+            }
+        }
+        const cash1 = new Cash(1050); //1050 = 1050分
+        const cash2 = new Cash(66); //66 = 66分
+        const cash3 = cash1.add(cash2);
+        const cash4 = Cash.add(cash1, cash2);
+        const cash5 = Cash.add(cash1 + cash2);
+        const cash6 = cash3.add(cash2, cash1, cash5);
+        const cash7 = cash5.add(cash2 + cash1).add(cash6);
+        console.log(`${cash3}\n`, `${cash4}\n`, `${cash5}\n`, `${cash6}\n`, `${cash7}`);
+        //输出结果为： 11元1角6分    11元1角6分     11元1角6分     33元4角8分    55元8角0分
+    </script>
+</body>
+
+
+</html>

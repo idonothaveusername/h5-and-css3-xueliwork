@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Cash{
+			constructor(c) {
+    			this.cash = c
+  			}
+			static add(c1, c2) {
+			    var sum = c1.cash + c2.cash + ''
+			    return `${sum[0]}元${sum[1]}角${sum[2]}分`
+			}
+			add(c2) {
+			    var sum = this.cash + c2.cash + ''
+			    return `${sum[0]}元${sum[1]}角${sum[2]}分`
+			}
+			toString() {
+			    var sum = this.cash.toString()
+			    return `${sum[0]}元${sum[1]}角${sum[2]}分`
+			}
+			valueOf() {
+			    return this.cash
+			}
+		}
+		const cash1 = new Cash(1050); //1050 = 1050分
+        const cash2 = new Cash(66); //66 = 66分
+        const cash3 = cash1.add(cash2);
+        const cash4 = Cash.add(cash1, cash2);
+        // const cash5 = Cash.add(cash1 + cash2);
+		// const cash6 = cash3.add(cash2, cash1, cash5);
+		// const cash7 = cash5.add(cash2 + cash1).add(cash6);
+		console.log(`${cash3}\n`, `${cash4}\n`);//, `${cash5}\n`, `${cash6}\n`, `${cash7}`);
+
+	</script>
+
+</body>
+</html>
